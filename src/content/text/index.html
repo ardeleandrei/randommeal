@@ -1,0 +1,17 @@
+<div class="textContent">
+    <h1 id="mealTitle">{{ mealName }}</h1>
+    <p id="category"><span>Category</span>: {{mealCategory}}</p>
+    <p id="tags">
+      <span>Tags</span>: {{mealTags}}
+    </p>
+    <p id="instructions">
+      {{mealInstructions}}
+    </p>
+
+    <ul class = "dashed">
+        {{#mealIngredients}}
+            <li>{{.}}</li>
+        {{/mealIngredients}}
+    </ul>
+
+  </div>
