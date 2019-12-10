@@ -1,6 +1,14 @@
+  .searchWrap{
+    position :relative;
+    display: inline-block;
+    width: 100vw;
+    height: 26px;
+    bottom: 0;
+  }
+  
   .search {
-    width: 180px;
     position: absolute;
+    width: 180px;
     display: flex;
     padding: 10px;
     z-index: 1;
@@ -19,12 +27,12 @@
   }
 
   .searchTerm:hover{
-      background-color: #f4fcfe;
-      transition: all 0.2s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;
+      transition: all 0.1s;
   }
   
   .searchTerm:focus{
-    color: #31c3f0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;
   }
   
   .searchButton {
@@ -46,8 +54,8 @@
   }
 
   .searchButton:active{
-    background-color: #2cafd8;
-     transition: all 0.2s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;
+     transition: all 0.1s;
    }
 
   /*Resize the wrap to see the search bar change!*/
@@ -60,7 +68,7 @@
         padding: 10px;
         background-color:white;
         bottom: 0;
-        left: calc(50% - 90px);
-        top: 73%
+        left: calc(50% - 100px);
+        top: 700%;
       }
   }

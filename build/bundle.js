@@ -9519,7 +9519,7 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ":root body {\n  margin: 0;\n}\n\n.app {\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n.app .header {\n  position: relative;\n  border: 1px solid red;\n  height: auto;\n}\n\n.app .content {\n  position: relative;\n  flex: 1;\n  border: 1px solid blue;\n}", ""]);
+exports.push([module.i, ":root body {\n  margin: 0;\n  overflow-x: hidden;\n}\n\n.app {\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n.app .header {\n  position: relative;\n  height: auto;\n}\n\n.app .content {\n  position: relative;\n  flex: 1;\n  \n}\n", ""]);
 
 
 /***/ }),
@@ -9533,7 +9533,7 @@ exports.push([module.i, ":root body {\n  margin: 0;\n}\n\n.app {\n  height: 100v
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "#foodImage{\r\n    background-size: cover;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    border-radius: 10px;\r\n  }\r\n\r\n  .overlayPlay{\r\n    position: absolute;\r\n    display: block;\r\n    opacity:0.5;\r\n    z-index: 0;\r\n    top: 0;\r\n  width: 30vw;\r\n  height: 30vw;\r\n  border-radius: 10px;\r\n  background-size: 50%;\r\n  background-position: center center;\r\n    background-repeat: no-repeat;\r\n    background-image: url('https://i.imgur.com/4cB6VVC.png');\r\n  }\r\n  \r\n  .overlayPlay:hover{\r\n    opacity: 1;\r\n    transition: 200ms;\r\n    box-shadow: 0 0 150px rgba(0,0,0,0.2) inset;\r\n    \r\n  }\r\n  .imgBtnWrap{\r\n    height: 30vw;\r\n    -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    box-shadow: 0px 1px 8px -4px black;\r\n  }\r\n  .imgBtnWrap:hover{\r\n    cursor: pointer !important;\r\n  }", ""]);
+exports.push([module.i, "\r\n.wrapper{\r\n  max-width: calc(97.5vw - 15px);\r\n}\r\n\r\n#foodImage{\r\n    background-size: cover;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    border-radius: 10px;\r\n  }\r\n\r\n  .overlayPlay{\r\n    position: absolute;\r\n    display: inline-block;\r\n    opacity:0.5;\r\n    z-index: 12;\r\n  width: 30vw;\r\n  height: 30vw;\r\n  border-radius: 10px;\r\n  background-size: 50%;\r\n  background-position: center center;\r\n    background-repeat: no-repeat;\r\n    background-image: url('https://i.imgur.com/4cB6VVC.png');\r\n    margin: 15px;\r\n  }\r\n  \r\n  .overlayPlay:hover{\r\n    opacity: 1;\r\n    transition: 200ms;\r\n    box-shadow: 0 0 150px rgba(0,0,0,0.2) inset;\r\n    cursor: pointer !important\r\n    \r\n  }\r\n  .imgBtnWrap{\r\n    height: 30vw;\r\n    -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    box-shadow: 0px 1px 8px -4px black;\r\n    margin: 15px;\r\n    \r\n  }\r\n  .imgBtnWrap:hover{\r\n    cursor: pointer !important;\r\n  }\r\n\r\n  @media screen and (max-width: 750px){\r\n\r\n    .imgBtnWrap {\r\n      height: 88vw;\r\n    }\r\n\r\n   .overlayPlay{\r\n    opacity: 1;\r\n      height: 88vw;\r\n      width: 88vw;\r\n    }\r\n    \r\n}", ""]);
 
 
 /***/ }),
@@ -9547,7 +9547,7 @@ exports.push([module.i, "#foodImage{\r\n    background-size: cover;\r\n    backg
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  border: solid var(--main-border-color) 1px;\r\n  border-radius: 10px;\r\n  max-width: calc(97.5vw - 15px);\r\n  margin: 0 auto;\r\n  margin-top: 15px;\r\n  margin-bottom: 15px;\r\n  -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  overflow: hidden;\r\n}\r\n\r\n@media screen and (max-width: 750px){\r\n    .container{\r\n        flex-wrap: wrap;\r\n    }\r\n}", ""]);
 
 
 /***/ }),
@@ -9561,7 +9561,21 @@ exports.push([module.i, "", ""]);
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".textContent{\r\n    display: block;\r\n    max-width: 63vw;\r\n    margin: 10px;\r\n    height: auto;\r\n}\r\n\r\n#mealTitle{\r\n    font-size: 20px;\r\n}\r\n\r\n#instructions{\r\n    text-align: justify;\r\n}\r\n\r\n@media screen and (max-width: 750px){\r\n    .textContent{\r\n        margin: 15px;\r\n        margin-top: 0px;\r\n        max-width: 100vw;\r\n    }\r\n    \r\n    #mealTitle{\r\n        font-size: 20px;\r\n    }\r\n}\r\n\r\nul {\r\n    margin: 0;\r\n  }\r\n  ul.dashed {\r\n    list-style-type: none;\r\n  }\r\n  ul.dashed > li {\r\n    text-indent: -5px;\r\n  }\r\n  ul.dashed > li:before {\r\n    content: \"- \";\r\n    text-indent: -5px;\r\n  }", ""]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/content/video/index.css":
+/*!***************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/content/video/index.css ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".modal {\r\n    display: block;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n    position: fixed; \r\n    left: 0;\r\n    top: 0;\r\n    width: 100%; \r\n    height: 100%; \r\n    overflow: auto; \r\n    background-color: black;\r\n    transition: visibility 0s, opacity 0.2s linear;\r\n  }\r\n  \r\n  /* Modal Content/Box */\r\n  .modal-content {\r\n    background-color: var(--main-bg-color);\r\n    margin: 5% auto; /* 15% from the top and centered */\r\n    padding: 15px;\r\n    border: 1px solid #888;\r\n    width: 70%; /* Could be more or less, depending on screen size */\r\n    border-radius: 10px;\r\n  }\r\n  \r\n  /* The Close Button */\r\n  .closeBtn {\r\n    position: absolute;\r\n    color:white;\r\n    float: right;\r\n    font-size: 60px;\r\n    font-weight: bold;\r\n    top: 0px;\r\n    left: 86vw;\r\n  }\r\n  \r\n  .closeBtn:hover{\r\n    cursor: pointer !important;\r\n  }\r\n  \r\n  .closeBtn:focus{\r\n  \r\n    color: black !important;\r\n    text-decoration: none !important;\r\n  }\r\n  \r\n  \r\n  #videoElement{\r\n  width: 100%;\r\n  height: 70vh;\r\n  \r\n  }\r\n  \r\n  @media screen and (max-width: 650px) {\r\n   \r\n    .closeBtn {\r\n      position: fixed;\r\n      color:white;\r\n      float: right;\r\n      font-size: 60px;\r\n      font-weight: bold;\r\n      top: -28px;\r\n      left: 88%;\r\n    }\r\n  }", ""]);
 
 
 /***/ }),
@@ -9575,7 +9589,7 @@ exports.push([module.i, "", ""]);
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".buttonWrapper{\r\n    position :relative;\r\n    display: block;\r\n    width: 100vw;\r\nbottom: 0;\r\n}\r\n\r\nbutton {\r\n    position: relative;\r\n    display: block;\r\n    background-color: #31c3f0;\r\n    border: none;\r\n    border-radius: 4px;\r\n    padding: 5px white;\r\n    color: white;\r\n    width: 140px;\r\n    height: 40px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    font-size: 12px;\r\n    cursor: pointer;\r\n    font-family: \"Open Sans\", sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: 1px;\r\n    margin-top: 20px;\r\n    margin: 0 auto;\r\n   \r\n  }\r\n\r\n  button:hover{\r\n    background-color:#45c9f1;\r\n     transition: all 0.2s;\r\n   }\r\n\r\n  @media screen and (max-width: 750px){\r\n    .buttonWrapper{\r\n    position :relative;\r\n    display: block;\r\n    width: 100vw;\r\nbottom: 0;\r\npadding-bottom: 70px;\r\n}\r\n  }", ""]);
+exports.push([module.i, ".buttonWrapper{\r\n    position :relative;\r\n    display: block;\r\n    width: 100vw;\r\nbottom: 0;\r\n}\r\n\r\nbutton {\r\n    position: relative;\r\n    display: block;\r\n    background-color: #31c3f0;\r\n    border: none;\r\n    border-radius: 4px;\r\n    padding: 5px white;\r\n    color: white;\r\n    width: 140px;\r\n    height: 40px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    font-size: 12px;\r\n    cursor: pointer;\r\n    font-family: \"Open Sans\", sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: 1px;\r\n    margin-top: 20px;\r\n    margin: 0 auto;\r\n    outline: none;\r\n  }\r\n\r\n  button:hover{\r\n    background-color:#45c9f1;\r\n     transition: all 0.2s;\r\n   }\r\n\r\n   button:active{\r\n    box-shadow: 0 0 8px rgba(0,0,0,0.2) inset;\r\n    transition: none;\r\n    outline: none;\r\n   }\r\n\r\n  @media screen and (max-width: 750px){\r\n        .buttonWrapper{\r\n        position :relative;\r\n        display: block;\r\n        width: 100vw;\r\n    bottom: 0;\r\n    padding-bottom: 70px;\r\n    }\r\n  }", ""]);
 
 
 /***/ }),
@@ -9603,7 +9617,7 @@ exports.push([module.i, "", ""]);
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "  .search {\r\n    width: 180px;\r\n    position: absolute;\r\n    display: flex;\r\n    padding: 10px;\r\n    z-index: 1;\r\n  }\r\n  \r\n  .searchTerm {\r\n    width: 100%;\r\n    border: 3px solid #31c3f0;\r\n    border-right: none;\r\n    padding: 5px;\r\n    height: 26px;\r\n    border-radius: 5px 0 0 5px;\r\n    outline: none;\r\n    color:gray;\r\n    background-color: white;\r\n  }\r\n\r\n  .searchTerm:hover{\r\n      background-color: #f4fcfe;\r\n      transition: all 0.2s;\r\n  }\r\n  \r\n  .searchTerm:focus{\r\n    color: #31c3f0;\r\n  }\r\n  \r\n  .searchButton {\r\n    width: 40px;\r\n    height: 42px;\r\n    border: 3px solid #31c3f0;\r\n    background:  #31c3f0;\r\n    text-align: center;\r\n    color: #fff;\r\n    border-radius: 0 5px 5px 0;\r\n    cursor: pointer;\r\n    font-size: 20px;\r\n  }\r\n  \r\n\r\n  .searchButton:hover{\r\n   background-color:#45c9f1;\r\n    transition: all 0.2s;\r\n  }\r\n\r\n  .searchButton:active{\r\n    background-color: #2cafd8;\r\n     transition: all 0.2s;\r\n   }\r\n\r\n  /*Resize the wrap to see the search bar change!*/\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .search {\r\n        position: absolute;\r\n        max-width: 100vw;\r\n        display: flex;\r\n        padding: 10px;\r\n        background-color:white;\r\n        bottom: 0;\r\n        left: calc(50% - 90px);\r\n        top: 73%\r\n      }\r\n  }", ""]);
+exports.push([module.i, "  .searchWrap{\r\n    position :relative;\r\n    display: inline-block;\r\n    width: 100vw;\r\n    height: 26px;\r\n    bottom: 0;\r\n  }\r\n  \r\n  .search {\r\n    position: absolute;\r\n    width: 180px;\r\n    display: flex;\r\n    padding: 10px;\r\n    z-index: 1;\r\n  }\r\n  \r\n  .searchTerm {\r\n    width: 100%;\r\n    border: 3px solid #31c3f0;\r\n    border-right: none;\r\n    padding: 5px;\r\n    height: 26px;\r\n    border-radius: 5px 0 0 5px;\r\n    outline: none;\r\n    color:gray;\r\n    background-color: white;\r\n  }\r\n\r\n  .searchTerm:hover{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n      transition: all 0.1s;\r\n  }\r\n  \r\n  .searchTerm:focus{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n  }\r\n  \r\n  .searchButton {\r\n    width: 40px;\r\n    height: 42px;\r\n    border: 3px solid #31c3f0;\r\n    background:  #31c3f0;\r\n    text-align: center;\r\n    color: #fff;\r\n    border-radius: 0 5px 5px 0;\r\n    cursor: pointer;\r\n    font-size: 20px;\r\n  }\r\n  \r\n\r\n  .searchButton:hover{\r\n   background-color:#45c9f1;\r\n    transition: all 0.2s;\r\n  }\r\n\r\n  .searchButton:active{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n     transition: all 0.1s;\r\n   }\r\n\r\n  /*Resize the wrap to see the search bar change!*/\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .search {\r\n        position: absolute;\r\n        max-width: 100vw;\r\n        display: flex;\r\n        padding: 10px;\r\n        background-color:white;\r\n        bottom: 0;\r\n        left: calc(50% - 100px);\r\n        top: 700%;\r\n      }\r\n  }", ""]);
 
 
 /***/ }),
@@ -9621,7 +9635,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Osw
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap);", ""]);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap);", ""]);
 // Module
-exports.push([module.i, ".title{\r\n    position: relative;\r\n    display: block;\r\n    height: auto;\r\n    width: 100vw;\r\n    margin: 0;\r\n    \r\n}\r\n\r\n.title h1{\r\n    font-family: \"Oswald\", sans-serif;\r\n   display: block;\r\n  font-weight: 400;\r\n  font-size: 35px;\r\n  margin: 10px;\r\n  color: black;\r\n margin-left: auto;\r\n margin-right: auto;\r\n \r\n text-align: center;\r\n}\r\n\r\n.title h2 {\r\n    font-family: \"PT Sans\", sans-serif;\r\n    font-size: 20px;\r\n    font-weight: 400;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n  }\r\n  ", ""]);
+exports.push([module.i, ".title{\r\n    position: relative;\r\n    display: block;\r\n    height: auto;\r\n    width: 100vw;\r\n    margin: 0;\r\n    \r\n}\r\n\r\n.title h1{\r\n    font-family: \"Oswald\", sans-serif;\r\n   display: block;\r\n  font-weight: 400;\r\n  font-size: 35px;\r\n  margin: 10px;\r\n  color: black;\r\n margin-left: auto;\r\n margin-right: auto;\r\n \r\n text-align: center;\r\n}\r\n\r\n.title h2 {\r\n    font-family: \"PT Sans\", sans-serif;\r\n    font-size: 20px;\r\n    font-weight: 400;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n  }\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .title h2 {\r\n        font-family: \"PT Sans\", sans-serif;\r\n        font-size: 16px;\r\n        font-weight: 400;\r\n        text-align: center;\r\n        margin-top: 10px;\r\n      }\r\n}", ""]);
 
 
 /***/ }),
@@ -11507,18 +11521,18 @@ module.exports = function (list, options) {
 /*!**************************!*\
   !*** ./src/api/index.js ***!
   \**************************/
-/*! exports provided: getMeal, getCategories */
+/*! exports provided: getRandom, getBySearch */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getMeal", function() { return getMeal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCategories", function() { return getCategories; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRandom", function() { return getRandom; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getBySearch", function() { return getBySearch; });
 var API_URL = 'https://www.themealdb.com/api/json/v1/1';
 
-var getMeal = function getMeal() {
+var getRandom = function getRandom() {
   var response, data;
-  return regeneratorRuntime.async(function getMeal$(_context) {
+  return regeneratorRuntime.async(function getRandom$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
@@ -11548,16 +11562,36 @@ var getMeal = function getMeal() {
   }, null, null, [[0, 10]]);
 };
 
-var getCategories = function getCategories() {
-  return regeneratorRuntime.async(function getCategories$(_context2) {
+var getBySearch = function getBySearch(search) {
+  var response, data;
+  return regeneratorRuntime.async(function getBySearch$(_context2) {
     while (1) {
       switch (_context2.prev = _context2.next) {
         case 0:
+          _context2.prev = 0;
+          _context2.next = 3;
+          return regeneratorRuntime.awrap(fetch("".concat(API_URL, "/search.php?s=").concat(search)));
+
+        case 3:
+          response = _context2.sent;
+          _context2.next = 6;
+          return regeneratorRuntime.awrap(response.json());
+
+        case 6:
+          data = _context2.sent;
+          return _context2.abrupt("return", data.meals);
+
+        case 10:
+          _context2.prev = 10;
+          _context2.t0 = _context2["catch"](0);
+          console.log('Error is: ' + _context2.t0);
+
+        case 13:
         case "end":
           return _context2.stop();
       }
     }
-  });
+  }, null, null, [[0, 10]]);
 };
 
 
@@ -11598,7 +11632,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<meta name=\"viewport\" content=\"width=device-width\" />\n<div class=\"app\">\n  <div class=\"header\">\n    {{> header}}\n  </div>\n  <div class=\"content\">\n    {{> content}}\n  </div>\n</div>";
+module.exports = "<meta name=\"viewport\" content=\"width=device-width\" />\n<div class=\"app\">\n  <div class=\"header\">\n    {{> header}}\n  </div>\n  <div class=\"content\" id = \"content\">\n    {{> content}}\n  </div>\n</div>";
 
 /***/ }),
 
@@ -11615,11 +11649,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mustache__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/api/index.js");
 /* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../content */ "./src/content/index.js");
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../header */ "./src/header/index.js");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.html */ "./src/app/index.html");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.css */ "./src/app/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _content_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../content/image */ "./src/content/image/index.js");
+/* harmony import */ var _content_video__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../content/video */ "./src/content/video/index.js");
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../header */ "./src/header/index.js");
+/* harmony import */ var _header_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../header/button */ "./src/header/button/index.js");
+/* harmony import */ var _header_search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../header/search */ "./src/header/search/index.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./index.html */ "./src/app/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index.css */ "./src/app/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_9__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -11628,6 +11666,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
  // components
+
+
+
+
 
 
  // css & html
@@ -11645,15 +11687,15 @@ function () {
   _createClass(App, [{
     key: "render",
     value: function render($container, meal) {
-      var html;
+      var html, getMealButton, searchTerm, searchButton, playButton, closeButton;
       return regeneratorRuntime.async(function render$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.t0 = mustache__WEBPACK_IMPORTED_MODULE_0___default.a;
-              _context.t1 = _index_html__WEBPACK_IMPORTED_MODULE_4___default.a;
+              _context.t1 = _index_html__WEBPACK_IMPORTED_MODULE_8___default.a;
               _context.t2 = {};
-              _context.t3 = new _header__WEBPACK_IMPORTED_MODULE_3__["default"]().render();
+              _context.t3 = new _header__WEBPACK_IMPORTED_MODULE_5__["default"]().render();
               _context.next = 6;
               return regeneratorRuntime.awrap(new _content__WEBPACK_IMPORTED_MODULE_2__["default"]().render(meal));
 
@@ -11665,8 +11707,15 @@ function () {
               };
               html = _context.t0.render.call(_context.t0, _context.t1, _context.t2, _context.t5);
               $container.innerHTML = html;
+              getMealButton = document.getElementById('getMealBtn');
+              searchTerm = document.getElementById('searchTerm');
+              searchButton = document.getElementById('searchButton');
+              playButton = document.getElementById('playButton');
+              closeButton = document.getElementById('closeBtn');
+              playButton.addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_4__["default"].openModal);
+              closeButton.addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_4__["default"].closeModal);
 
-            case 10:
+            case 17:
             case "end":
               return _context.stop();
           }
@@ -11675,20 +11724,36 @@ function () {
     }
   }, {
     key: "run",
-    value: function run($parent) {
-      var meal;
+    value: function run($container, type, search) {
+      var meal, _meal;
+
       return regeneratorRuntime.async(function run$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
-              _context2.next = 2;
-              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_1__["getMeal"]());
+              if (!(type === 'random')) {
+                _context2.next = 7;
+                break;
+              }
 
-            case 2:
+              _context2.next = 3;
+              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_1__["getRandom"]());
+
+            case 3:
               meal = _context2.sent;
-              this.render($parent, meal);
+              this.render($container, meal);
+              _context2.next = 11;
+              break;
 
-            case 4:
+            case 7:
+              _context2.next = 9;
+              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_1__["getBySearch"](search));
+
+            case 9:
+              _meal = _context2.sent;
+              this.render($container, _meal);
+
+            case 11:
             case "end":
               return _context2.stop();
           }
@@ -11738,7 +11803,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<img class = \"imgBtnWrap\" id = \"foodImage\" src = {{imgSrc}} />\r\n <div class = \"overlayPlay\" ></div>\r\n";
+module.exports = "<div class = \"content\">\r\n        <div class = \"overlayPlay\" id=\"playButton\"></div>\r\n<img class = \"imgBtnWrap\" id = \"foodImage\" src = {{imgSrc}} />\r\n\r\n</div>\r\n";
 
 /***/ }),
 
@@ -11829,7 +11894,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"content\">\r\n    {{> image}}\r\n    {{> text}}\r\n    </div>";
+module.exports = "<div class = \"container\">\r\n    {{> image}}\r\n    {{> text}}\r\n    {{> video}}\r\n    </div>";
 
 /***/ }),
 
@@ -11851,11 +11916,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api */ "./src/api/index.js");
 /* harmony import */ var _image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./image */ "./src/content/image/index.js");
 /* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./text */ "./src/content/text/index.js");
+/* harmony import */ var _video__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./video */ "./src/content/video/index.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 
 
 
@@ -11873,27 +11940,44 @@ function () {
 
   _createClass(Content, [{
     key: "render",
-    value: function render() {
-      var meal, html;
+    value: function render(meal) {
+      var html;
       return regeneratorRuntime.async(function render$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              console.log("test");
-              _context.next = 3;
-              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_3__["getMeal"]());
-
-            case 3:
-              meal = _context.sent;
               html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
                 image: new _image__WEBPACK_IMPORTED_MODULE_4__["default"]().render(meal.strMealThumb),
-                text: new _text__WEBPACK_IMPORTED_MODULE_5__["default"]().render(meal)
+                text: new _text__WEBPACK_IMPORTED_MODULE_5__["default"]().render(meal),
+                video: new _video__WEBPACK_IMPORTED_MODULE_6__["default"]().render(meal.strYoutube)
               });
               return _context.abrupt("return", html);
 
-            case 6:
+            case 2:
             case "end":
               return _context.stop();
+          }
+        }
+      });
+    }
+  }, {
+    key: "setContent",
+    value: function setContent() {
+      var meal;
+      return regeneratorRuntime.async(function setContent$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_3__["getRandom"]());
+
+            case 2:
+              meal = _context2.sent;
+              return _context2.abrupt("return", Content.render(meal));
+
+            case 4:
+            case "end":
+              return _context2.stop();
           }
         }
       });
@@ -11985,14 +12069,12 @@ function () {
       for (var i = 0; i < 21; i++) {
         var ingrLabel = "strIngredient".concat(i);
         var measureLabel = "strMeasure".concat(i);
-        console.log(meal[ingrLabel]);
 
         if (meal[ingrLabel]) {
           ingrList.push("".concat(meal[ingrLabel], " - ").concat(meal[measureLabel]));
         }
       }
 
-      console.log(ingrList);
       return ingrList;
     }
   }, {
@@ -12017,6 +12099,112 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (Text);
+
+/***/ }),
+
+/***/ "./src/content/video/index.css":
+/*!*************************************!*\
+  !*** ./src/content/video/index.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./src/content/video/index.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/content/video/index.html":
+/*!**************************************!*\
+  !*** ./src/content/video/index.html ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal\" id=\"modalVideo\" style={{visibAndOpacity}}>\r\n\r\n        <!-- Modal content -->\r\n        <div class=\"modal-content\" id = \"modal-content\">\r\n            \r\n            <iframe\r\n            id=\"videoElement\"\r\n            src={{videoSource}}\r\n            frameborder=\"0\"\r\n            allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\r\n            allowfullscreen\r\n          ></iframe>\r\n          <span class=\"closeBtn\" id=\"closeBtn\">&times;</span>\r\n        </div>\r\n    </div>";
+
+/***/ }),
+
+/***/ "./src/content/video/index.js":
+/*!************************************!*\
+  !*** ./src/content/video/index.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mustache */ "./node_modules/mustache/mustache.js");
+/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mustache__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/content/video/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/content/video/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+
+var Video =
+/*#__PURE__*/
+function () {
+  function Video() {
+    _classCallCheck(this, Video);
+  }
+
+  _createClass(Video, [{
+    key: "render",
+    value: function render(strYoutube) {
+      if (!strYoutube) {
+        return '';
+      }
+
+      var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
+        videoSource: strYoutube.replace('watch?v=', 'embed/')
+      });
+      return html;
+    }
+  }], [{
+    key: "openModal",
+    value: function openModal() {
+      var modal = document.getElementById('modalVideo');
+      modal.style.visibility = 'visible';
+      modal.style.opacity = '1';
+    }
+  }, {
+    key: "closeModal",
+    value: function closeModal() {
+      var modal = document.getElementById('modalVideo');
+      var video = modal.getElementsByTagName('iframe')[0];
+      modal.style.visibility = 'hidden';
+      modal.style.opacity = '0';
+    }
+  }]);
+
+  return Video;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Video);
 
 /***/ }),
 
@@ -12054,7 +12242,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"buttonWrapper\"><button>GET MEAL 🍔</button></div>\r\n";
+module.exports = "<div class = \"buttonWrapper\"><button id = \"getMealBtn\">GET MEAL 🍔</button></div>";
 
 /***/ }),
 
@@ -12139,7 +12327,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"header\">\r\n{{> search }}\r\n{{> title }}\r\n{{> button }}\r\n{{> toggle }}\r\n</div>";
+module.exports = "<div class = \"header\">\r\n{{> search }}\r\n{{> title }}\r\n{{> button }}\r\n{{> toggle }}\r\n</div>\r\n";
 
 /***/ }),
 
@@ -12237,7 +12425,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<link href=\"http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css\" rel=\"stylesheet\">\r\n\r\n    <div class=\"search\">\r\n       <input type=\"text\" class=\"searchTerm\" id=\"searchTerm\" placeholder=\"Search meal\" value = \"\">\r\n       <button type=\"submit\" class=\"searchButton\" id=\"searchButton\">\r\n         <i class=\"fa fa-search\"></i>\r\n      </button>\r\n    </div>\r\n";
+module.exports = "<link href=\"http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css\" rel=\"stylesheet\">\r\n<div class = \"searchWrap\">\r\n    <div class=\"search\">\r\n       <input type=\"text\" class=\"searchTerm\" id=\"searchTerm\" placeholder=\"Search meal\" value = \"\">\r\n       <button type=\"submit\" class=\"searchButton\" id=\"searchButton\">\r\n         <i class=\"fa fa-search\"></i>\r\n      </button>\r\n    </div>\r\n  </div>\r\n";
 
 /***/ }),
 
@@ -12474,7 +12662,41 @@ __webpack_require__.r(__webpack_exports__);
 
 var app = new _app__WEBPACK_IMPORTED_MODULE_0__["default"]();
 var $container = document.getElementsByTagName('body')[0];
-app.run($container);
+
+$container.onload = function _callee2() {
+  var getMealButton;
+  return regeneratorRuntime.async(function _callee2$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.next = 2;
+          return regeneratorRuntime.awrap(app.run($container, 'random'));
+
+        case 2:
+          getMealButton = document.getElementById('getMealBtn');
+          getMealButton.addEventListener('click', function _callee() {
+            return regeneratorRuntime.async(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    _context.next = 2;
+                    return regeneratorRuntime.awrap(app.run($container, 'random'));
+
+                  case 2:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            });
+          });
+
+        case 4:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  });
+};
 
 /***/ })
 

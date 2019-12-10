@@ -24,7 +24,7 @@ button {
     letter-spacing: 1px;
     margin-top: 20px;
     margin: 0 auto;
-   
+    outline: none;
   }
 
   button:hover{
@@ -32,12 +32,18 @@ button {
      transition: all 0.2s;
    }
 
+   button:active{
+    box-shadow: 0 0 8px rgba(0,0,0,0.2) inset;
+    transition: none;
+    outline: none;
+   }
+
   @media screen and (max-width: 750px){
-    .buttonWrapper{
-    position :relative;
-    display: block;
-    width: 100vw;
-bottom: 0;
-padding-bottom: 70px;
-}
+        .buttonWrapper{
+        position :relative;
+        display: block;
+        width: 100vw;
+    bottom: 0;
+    padding-bottom: 70px;
+    }
   }

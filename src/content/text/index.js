@@ -9,13 +9,11 @@ class Text {
     for (let i = 0; i < 21; i++) {
       const ingrLabel = `strIngredient${i}`
       const measureLabel = `strMeasure${i}`
-      console.log(meal[ingrLabel])
       if (meal[ingrLabel]) {
         ingrList.push(`${meal[ingrLabel]} - ${meal[measureLabel]}`);
 
       }
     }
-    console.log(ingrList)
     return ingrList
   }
 

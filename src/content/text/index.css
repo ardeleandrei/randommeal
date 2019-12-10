@@ -1,0 +1,40 @@
+.textContent{
+    display: block;
+    max-width: 63vw;
+    margin: 10px;
+    height: auto;
+}
+
+#mealTitle{
+    font-size: 20px;
+}
+
+#instructions{
+    text-align: justify;
+}
+
+@media screen and (max-width: 750px){
+    .textContent{
+        margin: 15px;
+        margin-top: 0px;
+        max-width: 100vw;
+    }
+    
+    #mealTitle{
+        font-size: 20px;
+    }
+}
+
+ul {
+    margin: 0;
+  }
+  ul.dashed {
+    list-style-type: none;
+  }
+  ul.dashed > li {
+    text-indent: -5px;
+  }
+  ul.dashed > li:before {
+    content: "- ";
+    text-indent: -5px;
+  }

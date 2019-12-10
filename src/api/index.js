@@ -1,7 +1,7 @@
 
 const API_URL = 'https://www.themealdb.com/api/json/v1/1'
 
-const getMeal = async () => {
+const getRandom = async () => {
   try {
     const response = await fetch(
       API_URL + '/random.php'
@@ -14,11 +14,20 @@ const getMeal = async () => {
   }
 }
 
-const getCategories = async () => {
+const getBySearch = async (search) => {
+  try {
+    const response = await fetch(
+      `${API_URL}/search.php?s=${search}`
+    )
+    const data = await response.json()
+    return data.meals
 
+  } catch (e) {
+    console.log('Error is: ' + e)
+  }
 }
 
 export {
-  getMeal,
-  getCategories
+  getRandom,
+  getBySearch
 }
