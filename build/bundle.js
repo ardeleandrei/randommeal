@@ -9519,7 +9519,7 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ":root body {\n  margin: 0;\n  overflow-x: hidden;\n}\n\n.app {\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n}\n\n.app .header {\n  position: relative;\n  height: auto;\n}\n\n.app .content {\n  position: relative;\n  flex: 1;\n  \n}\n", ""]);
+exports.push([module.i, ":root body {\n  margin: 0;\n  overflow-x: hidden;\n}\n\n.app {\n  height: 100% !important;\n  display: flex;\n  flex-direction: column;\n  --bg-color: 255,255,255;\n  --h1-color: 0,0,0;\n  --btn-color: 49, 195, 240;\n  --p-color: 80,80,80;\n  --border-color: 211,211,211;\n\n  background-color: rgb(var(--bg-color));\n}\n\n.app h1{\n  color: rgb(var(--h1-color));\n}\n\n.app h2{\n  color: rgb(var(--h1-color))\n}\n\n.app p{\n  color: rgb(var(--p-color));\n}\n\n.app li{\n  color: rgb(var(--p-color));\n}\n\n.app button{\n  background-color: rgb(var(--btn-color));\n}\n\n.app input{\n  background-color: rgb(var(--bg-color));\n}\n\n.app .search{\n  background-color: rgb(var(--bg-color));\n}\n\n.app .container{\n  border-color: rgb(var(--border-color));\n}\n\n.app .modal{\n  background-color: rgba(0,0,0,0.7);\n}\n\n.app .modal-content{\n  background-color: rgb(var(--bg-color));\n}\n\n.darkMode{\n  --bg-color: 41,41,41 !important;\n  --h1-color: 255,255,255 !important;\n  --btn-color: 49,195,240 !important;\n  --border-color: 80,80,80 !important;\n  --p-color: 240,240,240 !important;\n}\n\n.app .header {\n  position: relative;\n  height: auto;\n}\n\n.app .content {\n  position: relative;\n  flex: 1;\n  \n}\n", ""]);
 
 
 /***/ }),
@@ -9532,8 +9532,11 @@ exports.push([module.i, ":root body {\n  margin: 0;\n  overflow-x: hidden;\n}\n\
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var getUrl = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ./icons/playbutton.png */ "./src/content/image/icons/playbutton.png"));
 // Module
-exports.push([module.i, "\r\n.wrapper{\r\n  max-width: calc(97.5vw - 15px);\r\n}\r\n\r\n#foodImage{\r\n    background-size: cover;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    border-radius: 10px;\r\n  }\r\n\r\n  .overlayPlay{\r\n    position: absolute;\r\n    display: inline-block;\r\n    opacity:0.5;\r\n    z-index: 12;\r\n  width: 30vw;\r\n  height: 30vw;\r\n  border-radius: 10px;\r\n  background-size: 50%;\r\n  background-position: center center;\r\n    background-repeat: no-repeat;\r\n    background-image: url('https://i.imgur.com/4cB6VVC.png');\r\n    margin: 15px;\r\n  }\r\n  \r\n  .overlayPlay:hover{\r\n    opacity: 1;\r\n    transition: 200ms;\r\n    box-shadow: 0 0 150px rgba(0,0,0,0.2) inset;\r\n    cursor: pointer !important\r\n    \r\n  }\r\n  .imgBtnWrap{\r\n    height: 30vw;\r\n    -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    box-shadow: 0px 1px 8px -4px black;\r\n    margin: 15px;\r\n    \r\n  }\r\n  .imgBtnWrap:hover{\r\n    cursor: pointer !important;\r\n  }\r\n\r\n  @media screen and (max-width: 750px){\r\n\r\n    .imgBtnWrap {\r\n      height: 88vw;\r\n    }\r\n\r\n   .overlayPlay{\r\n    opacity: 1;\r\n      height: 88vw;\r\n      width: 88vw;\r\n    }\r\n    \r\n}", ""]);
+exports.push([module.i, "\r\n.wrapper{\r\n  max-width: calc(97.5vw - 15px);\r\n}\r\n\r\n#foodImage{\r\n    background-size: cover;\r\n    background-position: center center;\r\n    background-repeat: no-repeat;\r\n    border-radius: 10px;\r\n  }\r\n\r\n  .overlayPlay{\r\n    position: absolute;\r\n    display: inline-block;\r\n    opacity:0.5;\r\n    z-index: 12;\r\n  width: 30vw;\r\n  height: 30vw;\r\n  border-radius: 10px;\r\n  background-size: 50%;\r\n  background-position: center center;\r\n    background-repeat: no-repeat;\r\n    background-image: url(" + ___CSS_LOADER_URL___0___ + ") !important;\r\n    margin: 15px;\r\n  }\r\n  \r\n  .overlayPlay:hover{\r\n    opacity: 1;\r\n    transition: 200ms;\r\n    box-shadow: 0 0 150px rgba(0,0,0,0.2) inset;\r\n    cursor: pointer !important\r\n    \r\n  }\r\n  .imgBtnWrap{\r\n    height: 30vw;\r\n    -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n    box-shadow: 0px 1px 8px -4px black;\r\n    margin: 15px;\r\n    \r\n  }\r\n  .imgBtnWrap:hover{\r\n    cursor: pointer !important;\r\n  }\r\n\r\n  @media screen and (max-width: 750px){\r\n\r\n    .imgBtnWrap {\r\n      height: 88vw;\r\n      max-width: calc(100% - 30px);\r\n    }\r\n   \r\n   .overlayPlay{\r\n   \r\n      height: 88vw;\r\n      width: 88vw;\r\n      max-width: calc(100% - 30px);\r\n    }\r\n    \r\n}", ""]);
 
 
 /***/ }),
@@ -9547,7 +9550,7 @@ exports.push([module.i, "\r\n.wrapper{\r\n  max-width: calc(97.5vw - 15px);\r\n}
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".container {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  border: solid var(--main-border-color) 1px;\r\n  border-radius: 10px;\r\n  max-width: calc(97.5vw - 15px);\r\n  margin: 0 auto;\r\n  margin-top: 15px;\r\n  margin-bottom: 15px;\r\n  -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  overflow: hidden;\r\n}\r\n\r\n@media screen and (max-width: 750px){\r\n    .container{\r\n        flex-wrap: wrap;\r\n    }\r\n}", ""]);
+exports.push([module.i, "\r\n.container {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  border: solid black 1px;\r\n  border-radius: 10px;\r\n  max-width: calc(97.5vw - 15px);\r\n\r\n  margin: 20px;\r\n  -webkit-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  -moz-box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  box-shadow: 0px 1px 8px -4px rgba(87, 87, 87, 0.63);\r\n  overflow: hidden;\r\n  \r\n}\r\n\r\n@media screen and (max-width: 750px){\r\n    .container{\r\n        flex-wrap: wrap;\r\n    }\r\n}", ""]);
 
 
 /***/ }),
@@ -9560,8 +9563,12 @@ exports.push([module.i, ".container {\r\n  display: flex;\r\n  justify-content: 
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap);", ""]);
 // Module
-exports.push([module.i, ".textContent{\r\n    display: block;\r\n    max-width: 63vw;\r\n    margin: 10px;\r\n    height: auto;\r\n}\r\n\r\n#mealTitle{\r\n    font-size: 20px;\r\n}\r\n\r\n#instructions{\r\n    text-align: justify;\r\n}\r\n\r\n@media screen and (max-width: 750px){\r\n    .textContent{\r\n        margin: 15px;\r\n        margin-top: 0px;\r\n        max-width: 100vw;\r\n    }\r\n    \r\n    #mealTitle{\r\n        font-size: 20px;\r\n    }\r\n}\r\n\r\nul {\r\n    margin: 0;\r\n  }\r\n  ul.dashed {\r\n    list-style-type: none;\r\n  }\r\n  ul.dashed > li {\r\n    text-indent: -5px;\r\n  }\r\n  ul.dashed > li:before {\r\n    content: \"- \";\r\n    text-indent: -5px;\r\n  }", ""]);
+exports.push([module.i, ".textContent{\r\n    display: block;\r\n    max-width: 63vw;\r\n    margin: 20px !important;\r\n    margin-top: 15px !important;\r\n    margin-bottom: 25px !important;\r\n    height: auto;\r\n    font-family: \"PT Sans\", sans-serif;\r\n}\r\n\r\n#mealTitle{\r\n    font-size: 25px !important;\r\n}\r\n\r\n#instructions{\r\n    text-align: justify;\r\n}\r\n\r\n@media screen and (max-width: 750px){\r\n    .textContent{\r\n        margin: 15px;\r\n        margin-top: 0px;\r\n        max-width: 100vw;\r\n    }\r\n    \r\n    #mealTitle{\r\n        font-size: 20px;\r\n    }\r\n}\r\n\r\nul {\r\n    margin: 0;\r\n  }\r\n  ul.dashed {\r\n    list-style-type: none;\r\n  }\r\n  ul.dashed > li {\r\n    text-indent: -5px;\r\n  }\r\n  ul.dashed > li:before {\r\n    content: \"- \";\r\n    text-indent: -5px;\r\n  }\r\n\r\n  li{\r\n    font-size: 20px;\r\n  }\r\n  span{\r\n    font-weight: bold;\r\n  }\r\n\r\n  p {\r\n    font-size: 20px;\r\n    font-family: \"PT Sans\", sans-serif;\r\n  }", ""]);
 
 
 /***/ }),
@@ -9575,7 +9582,7 @@ exports.push([module.i, ".textContent{\r\n    display: block;\r\n    max-width: 
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".modal {\r\n    display: block;\r\n    visibility: hidden;\r\n    opacity: 0;\r\n    position: fixed; \r\n    left: 0;\r\n    top: 0;\r\n    width: 100%; \r\n    height: 100%; \r\n    overflow: auto; \r\n    background-color: black;\r\n    transition: visibility 0s, opacity 0.2s linear;\r\n  }\r\n  \r\n  /* Modal Content/Box */\r\n  .modal-content {\r\n    background-color: var(--main-bg-color);\r\n    margin: 5% auto; /* 15% from the top and centered */\r\n    padding: 15px;\r\n    border: 1px solid #888;\r\n    width: 70%; /* Could be more or less, depending on screen size */\r\n    border-radius: 10px;\r\n  }\r\n  \r\n  /* The Close Button */\r\n  .closeBtn {\r\n    position: absolute;\r\n    color:white;\r\n    float: right;\r\n    font-size: 60px;\r\n    font-weight: bold;\r\n    top: 0px;\r\n    left: 86vw;\r\n  }\r\n  \r\n  .closeBtn:hover{\r\n    cursor: pointer !important;\r\n  }\r\n  \r\n  .closeBtn:focus{\r\n  \r\n    color: black !important;\r\n    text-decoration: none !important;\r\n  }\r\n  \r\n  \r\n  #videoElement{\r\n  width: 100%;\r\n  height: 70vh;\r\n  \r\n  }\r\n  \r\n  @media screen and (max-width: 650px) {\r\n   \r\n    .closeBtn {\r\n      position: fixed;\r\n      color:white;\r\n      float: right;\r\n      font-size: 60px;\r\n      font-weight: bold;\r\n      top: -28px;\r\n      left: 88%;\r\n    }\r\n  }", ""]);
+exports.push([module.i, ".modal {\r\n    display: block;\r\n    z-index: 20;\r\n    visibility: hidden;\r\n\r\n    position: fixed; \r\n    left: 0;\r\n    top: 0;\r\n    width: 100%; \r\n    height: 100%; \r\n    overflow: auto; \r\n    background-color: rgba(var(--bg-color),0.8);\r\n    transition: visibility 0s, opacity 0.2s linear;\r\n  }\r\n  \r\n  /* Modal Content/Box */\r\n  .modal-content {\r\n    background-color: black;\r\n    margin: 5% auto; /* 15% from the top and centered */\r\n    padding: 15px;\r\n    opacity: 1;\r\n    border: 1px solid #888;\r\n    width: 70%; /* Could be more or less, depending on screen size */\r\n    border-radius: 10px;\r\n  }\r\n  \r\n  /* The Close Button */\r\n  .closeBtn {\r\n    position: absolute;\r\n    color:white;\r\n    float: right;\r\n    font-size: 60px;\r\n    font-weight: bold;\r\n    top: 0px;\r\n    left: calc(100% - 50px);\r\n    \r\n  }\r\n  \r\n  .closeBtn:hover{\r\n    cursor: pointer !important;\r\n    text-shadow: 0 0 3px #fff, 0 0 3px;\r\n\r\n  }\r\n  \r\n  .closeBtn:focus{\r\n  \r\n    color: black !important;\r\n    text-decoration: none !important;\r\n  }\r\n  \r\n  \r\n  #videoElement{\r\n  width: 100%;\r\n  height: 70vh;\r\n  \r\n  }\r\n  \r\n  @media screen and (max-width: 1260px) {\r\n\r\n    .modal-content {\r\n      background-color: var(--main-bg-color);\r\n      margin: none; /* 15% from the top and centered */\r\n      padding: 15px;\r\n      border: 1px solid #888;\r\n      width: calc(100% - 30px); /* Could be more or less, depending on screen size */\r\n      border-radius: 10px;\r\n      margin-top:12%;\r\n    }\r\n\r\n    .closeBtn {\r\n      position: fixed;\r\n      color:white;\r\n      float: right;\r\n      font-size: 60px;\r\n      font-weight: bold;\r\n      top: -10px;\r\n      left: calc(100% - 45px);\r\n    }\r\n  }", ""]);
 
 
 /***/ }),
@@ -9589,7 +9596,7 @@ exports.push([module.i, ".modal {\r\n    display: block;\r\n    visibility: hidd
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".buttonWrapper{\r\n    position :relative;\r\n    display: block;\r\n    width: 100vw;\r\nbottom: 0;\r\n}\r\n\r\nbutton {\r\n    position: relative;\r\n    display: block;\r\n    background-color: #31c3f0;\r\n    border: none;\r\n    border-radius: 4px;\r\n    padding: 5px white;\r\n    color: white;\r\n    width: 140px;\r\n    height: 40px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    font-size: 12px;\r\n    cursor: pointer;\r\n    font-family: \"Open Sans\", sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: 1px;\r\n    margin-top: 20px;\r\n    margin: 0 auto;\r\n    outline: none;\r\n  }\r\n\r\n  button:hover{\r\n    background-color:#45c9f1;\r\n     transition: all 0.2s;\r\n   }\r\n\r\n   button:active{\r\n    box-shadow: 0 0 8px rgba(0,0,0,0.2) inset;\r\n    transition: none;\r\n    outline: none;\r\n   }\r\n\r\n  @media screen and (max-width: 750px){\r\n        .buttonWrapper{\r\n        position :relative;\r\n        display: block;\r\n        width: 100vw;\r\n    bottom: 0;\r\n    padding-bottom: 70px;\r\n    }\r\n  }", ""]);
+exports.push([module.i, ".buttonWrapper{\r\n    position :relative;\r\n    display: block;\r\n    width: 100vw;\r\nbottom: 0;\r\n}\r\n\r\nbutton {\r\n    position: relative;\r\n    display: block;\r\n    background-color: #31c3f0;\r\n    border: none;\r\n    border-radius: 4px;\r\n    padding: 5px white;\r\n    color: white;\r\n    width: 140px;\r\n    height: 40px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    font-size: 12px;\r\n    cursor: pointer;\r\n    font-family: \"Open Sans\", sans-serif;\r\n    font-weight: 600;\r\n    letter-spacing: 1px;\r\n    margin-top: 20px;\r\n    margin: 0 auto;\r\n    outline: none;\r\n  }\r\n\r\n  button:hover{\r\n    background-color:#45c9f1 !important;;\r\n     transition: all 0.2s;\r\n   }\r\n\r\n   button:active{\r\n    box-shadow: 0 0 8px rgba(0,0,0,0.2) inset;\r\n    transition: none;\r\n    outline: none;\r\n   }\r\n\r\n  @media screen and (max-width: 750px){\r\n        .buttonWrapper{\r\n        position :relative;\r\n        display: block;\r\n        width: 100vw;\r\n    bottom: 0;\r\n    padding-bottom: 70px;\r\n    }\r\n  }", ""]);
 
 
 /***/ }),
@@ -9617,7 +9624,7 @@ exports.push([module.i, "", ""]);
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "  .searchWrap{\r\n    position :relative;\r\n    display: inline-block;\r\n    width: 100vw;\r\n    height: 26px;\r\n    bottom: 0;\r\n  }\r\n  \r\n  .search {\r\n    position: absolute;\r\n    width: 180px;\r\n    display: flex;\r\n    padding: 10px;\r\n    z-index: 1;\r\n  }\r\n  \r\n  .searchTerm {\r\n    width: 100%;\r\n    border: 3px solid #31c3f0;\r\n    border-right: none;\r\n    padding: 5px;\r\n    height: 26px;\r\n    border-radius: 5px 0 0 5px;\r\n    outline: none;\r\n    color:gray;\r\n    background-color: white;\r\n  }\r\n\r\n  .searchTerm:hover{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n      transition: all 0.1s;\r\n  }\r\n  \r\n  .searchTerm:focus{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n  }\r\n  \r\n  .searchButton {\r\n    width: 40px;\r\n    height: 42px;\r\n    border: 3px solid #31c3f0;\r\n    background:  #31c3f0;\r\n    text-align: center;\r\n    color: #fff;\r\n    border-radius: 0 5px 5px 0;\r\n    cursor: pointer;\r\n    font-size: 20px;\r\n  }\r\n  \r\n\r\n  .searchButton:hover{\r\n   background-color:#45c9f1;\r\n    transition: all 0.2s;\r\n  }\r\n\r\n  .searchButton:active{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n     transition: all 0.1s;\r\n   }\r\n\r\n  /*Resize the wrap to see the search bar change!*/\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .search {\r\n        position: absolute;\r\n        max-width: 100vw;\r\n        display: flex;\r\n        padding: 10px;\r\n        background-color:white;\r\n        bottom: 0;\r\n        left: calc(50% - 100px);\r\n        top: 700%;\r\n      }\r\n  }", ""]);
+exports.push([module.i, "  .searchWrap{\r\n    position :relative;\r\n    display: inline-block;\r\n    width: 100vw;\r\n    height: 26px;\r\n    bottom: 0;\r\n  }\r\n  \r\n  .search {\r\n    position: absolute;\r\n    width: 180px;\r\n    display: flex;\r\n    padding: none;\r\n    z-index: 1;\r\n    left: 20px;\r\n    top: 20px;\r\n  }\r\n  \r\n  .searchTerm {\r\n    width: 100%;\r\n    border: 3px solid #31c3f0;\r\n    border-right: none;\r\n    padding: 5px;\r\n    height: 26px;\r\n    border-radius: 5px 0 0 5px;\r\n    outline: none;\r\n    color:gray;\r\n    background-color: white;\r\n  }\r\n\r\n  .searchTerm:hover{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n      transition: all 0.1s;\r\n  }\r\n  \r\n  .searchTerm:focus{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n  }\r\n  \r\n  .searchButton {\r\n    width: 40px;\r\n    height: 42px;\r\n    border: 3px solid #31c3f0;\r\n    background:  #31c3f0;\r\n    text-align: center;\r\n    color: #fff;\r\n    border-radius: 0 5px 5px 0;\r\n    cursor: pointer;\r\n    font-size: 20px;\r\n  }\r\n  \r\n\r\n  .searchButton:hover{\r\n   background-color:#45c9f1;\r\n    transition: all 0.2s;\r\n  }\r\n\r\n  .searchButton:active{\r\n    box-shadow: 0 0 5px rgba(0,0,0,0.2) inset;\r\n     transition: all 0.1s;\r\n   }\r\n\r\n  /*Resize the wrap to see the search bar change!*/\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .search {\r\n        position: absolute;\r\n        max-width: 100vw;\r\n        display: flex;\r\n        padding: 10px;\r\n        background-color:white;\r\n        bottom: 0;\r\n        left: calc(50% - 100px);\r\n        top: 740%;\r\n      }\r\n      .searchWrap{\r\n        margin: 0;\r\n      }\r\n  }", ""]);
 
 
 /***/ }),
@@ -9635,7 +9642,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Osw
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap);", ""]);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap);", ""]);
 // Module
-exports.push([module.i, ".title{\r\n    position: relative;\r\n    display: block;\r\n    height: auto;\r\n    width: 100vw;\r\n    margin: 0;\r\n    \r\n}\r\n\r\n.title h1{\r\n    font-family: \"Oswald\", sans-serif;\r\n   display: block;\r\n  font-weight: 400;\r\n  font-size: 35px;\r\n  margin: 10px;\r\n  color: black;\r\n margin-left: auto;\r\n margin-right: auto;\r\n \r\n text-align: center;\r\n}\r\n\r\n.title h2 {\r\n    font-family: \"PT Sans\", sans-serif;\r\n    font-size: 20px;\r\n    font-weight: 400;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n  }\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .title h2 {\r\n        font-family: \"PT Sans\", sans-serif;\r\n        font-size: 16px;\r\n        font-weight: 400;\r\n        text-align: center;\r\n        margin-top: 10px;\r\n      }\r\n}", ""]);
+exports.push([module.i, ".title{\r\n    position: relative;\r\n    display: block;\r\n    height: auto;\r\n    width: 100vw;\r\n    margin: 0;\r\n    \r\n}\r\n\r\n.title h1{\r\n    font-family: \"Oswald\", sans-serif;\r\n   display: block;\r\n  font-weight: 400;\r\n  font-size: 40px;\r\n  margin: 10px;\r\n  color: black;\r\n margin-left: auto;\r\n margin-right: auto;\r\n \r\n text-align: center;\r\n}\r\n\r\n.title h2 {\r\n    font-family: \"PT Sans\", sans-serif;\r\n    font-size: 20px;\r\n    font-weight: 400;\r\n    text-align: center;\r\n    margin-top: 10px;\r\n  }\r\n  \r\n  @media screen and (max-width: 750px){\r\n    .title h2 {\r\n        font-family: \"PT Sans\", sans-serif;\r\n        font-size: 16px;\r\n        font-weight: 400;\r\n        text-align: center;\r\n        margin-top: 10px;\r\n      }\r\n}", ""]);
 
 
 /***/ }),
@@ -9649,7 +9656,7 @@ exports.push([module.i, ".title{\r\n    position: relative;\r\n    display: bloc
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\r\n.slider.round {\r\n    border-radius: 34px;\r\n  }\r\n  \r\n  .slider.round:before {\r\n    border-radius: 50%;\r\n  }\r\n  \r\n  /* The switch - the box around the slider */\r\n  .switch {\r\n    position: absolute;\r\n    display: block;\r\n    top: 0;\r\n    right: 0;\r\n    width: 60px;\r\n    height: 34px;\r\n    border: solid transparent 4px;\r\n  }\r\n  \r\n  /* Hide default HTML checkbox */\r\n  .switch input {\r\n    opacity: 0;\r\n    width: 0;\r\n    height: 0;\r\n  }\r\n  \r\n  /* The slider */\r\n  .slider {\r\n    position: absolute;\r\n    cursor: pointer;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background-color: #ccc;\r\n    -webkit-transition: 0.4s;\r\n    transition: 0.4s;\r\n  }\r\n  \r\n  .slider:before {\r\n    position: absolute;\r\n    content: \"\";\r\n    height: 26px;\r\n    width: 26px;\r\n    left: 4px;\r\n    bottom: 4px;\r\n    background-color: white;\r\n    -webkit-transition: 0.4s;\r\n    transition: 0.4s;\r\n  }\r\n  \r\n  input:checked + .slider {\r\n    background-color: var(--main-btn-color);\r\n  }\r\n  \r\n  input:focus + .slider {\r\n    box-shadow: 0 0 1px #2196f3;\r\n  }\r\n  \r\n  input:checked + .slider:before {\r\n    -webkit-transform: translateX(26px);\r\n    -ms-transform: translateX(26px);\r\n    transform: translateX(26px);\r\n  }\r\n  \r\n  /* Rounded sliders */\r\n  .slider.round {\r\n    border-radius: 34px;\r\n  }\r\n  \r\n  .slider.round:before {\r\n    border-radius: 50%;\r\n  }\r\n  ", ""]);
+exports.push([module.i, "\r\n.slider.round {\r\n    border-radius: 34px;\r\n  }\r\n  \r\n  .slider.round:before {\r\n    border-radius: 50%;\r\n  }\r\n  \r\n  /* The switch - the box around the slider */\r\n  .switch {\r\n    position: absolute;\r\n    display: block;\r\n    top: 0;\r\n    right: 0;\r\n    width: 60px;\r\n    height: 34px;\r\n    margin: 16px;\r\n  }\r\n  \r\n  /* Hide default HTML checkbox */\r\n  .switch input {\r\n    opacity: 0;\r\n    width: 0;\r\n    height: 0;\r\n  }\r\n  \r\n  /* The slider */\r\n  .slider {\r\n    position: absolute;\r\n    cursor: pointer;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background-color: rgb(var(--btn-color));\r\n    -webkit-transition: 0.4s;\r\n    transition: 0.4s;\r\n  }\r\n  \r\n  .slider:before {\r\n    position: absolute;\r\n    content: \"\";\r\n    height: 26px;\r\n    width: 26px;\r\n    left: 4px;\r\n    bottom: 4px;\r\n    background-color: white;\r\n    -webkit-transition: 0.4s;\r\n    transition: 0.4s;\r\n  }\r\n  \r\n  input:checked + .slider {\r\n    background-color: white;\r\n  }\r\n  \r\n  input:focus + .slider {\r\n    box-shadow: 0 0 1px rgb(var(--btn-color));\r\n  }\r\n  \r\n  input:checked + .slider:before {\r\n    -webkit-transform: translateX(26px);\r\n    -ms-transform: translateX(26px);\r\n    transform: translateX(26px);\r\n    background-color: rgb(var(--btn-color));\r\n  }\r\n  \r\n  /* Rounded sliders */\r\n  .slider.round {\r\n    border-radius: 34px;\r\n  }\r\n  \r\n  .slider.round:before {\r\n    border-radius: 50%;\r\n  }\r\n  \r\n  @media screen and (max-width: 650px){\r\n    .switch {\r\n      position: absolute;\r\n      display: block;\r\n      top: 0;\r\n      right: 0;\r\n      width: 60px;\r\n      height: 34px;\r\n      margin: 16px;\r\n    }\r\n    \r\n  }", ""]);
 
 
 /***/ }),
@@ -9752,6 +9759,51 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -11528,70 +11580,29 @@ module.exports = function (list, options) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getRandom", function() { return getRandom; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getBySearch", function() { return getBySearch; });
-var API_URL = 'https://www.themealdb.com/api/json/v1/1';
+const API_URL = 'https://www.themealdb.com/api/json/v1/1';
 
-var getRandom = function getRandom() {
-  var response, data;
-  return regeneratorRuntime.async(function getRandom$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.prev = 0;
-          _context.next = 3;
-          return regeneratorRuntime.awrap(fetch(API_URL + '/random.php'));
-
-        case 3:
-          response = _context.sent;
-          _context.next = 6;
-          return regeneratorRuntime.awrap(response.json());
-
-        case 6:
-          data = _context.sent;
-          return _context.abrupt("return", data.meals[0]);
-
-        case 10:
-          _context.prev = 10;
-          _context.t0 = _context["catch"](0);
-          console.log('Error is: ' + _context.t0);
-
-        case 13:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, null, null, [[0, 10]]);
+const getRandom = async () => {
+  try {
+    const response = await fetch(API_URL + '/random.php');
+    const data = await response.json();
+    return data.meals[0];
+  } catch (e) {
+    console.log('Error is: ' + e);
+  }
 };
 
-var getBySearch = function getBySearch(search) {
-  var response, data;
-  return regeneratorRuntime.async(function getBySearch$(_context2) {
-    while (1) {
-      switch (_context2.prev = _context2.next) {
-        case 0:
-          _context2.prev = 0;
-          _context2.next = 3;
-          return regeneratorRuntime.awrap(fetch("".concat(API_URL, "/search.php?s=").concat(search)));
+const getBySearch = async (search, index) => {
+  console.log(`${API_URL}/search.php?s=${search}`);
 
-        case 3:
-          response = _context2.sent;
-          _context2.next = 6;
-          return regeneratorRuntime.awrap(response.json());
-
-        case 6:
-          data = _context2.sent;
-          return _context2.abrupt("return", data.meals);
-
-        case 10:
-          _context2.prev = 10;
-          _context2.t0 = _context2["catch"](0);
-          console.log('Error is: ' + _context2.t0);
-
-        case 13:
-        case "end":
-          return _context2.stop();
-      }
-    }
-  }, null, null, [[0, 10]]);
+  try {
+    const response = await fetch(`${API_URL}/search.php?s=${search}`);
+    const data = await response.json();
+    var rndm = Math.floor(Math.random() * Math.floor(data.meals.length));
+    return data.meals[rndm];
+  } catch (e) {
+    console.log('Error is: ' + e);
+  }
 };
 
 
@@ -11654,18 +11665,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../header */ "./src/header/index.js");
 /* harmony import */ var _header_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../header/button */ "./src/header/button/index.js");
 /* harmony import */ var _header_search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../header/search */ "./src/header/search/index.js");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./index.html */ "./src/app/index.html");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index.css */ "./src/app/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_9__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
+/* harmony import */ var _header_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../header/toggle */ "./src/header/toggle/index.js");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index.html */ "./src/app/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./index.css */ "./src/app/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_10__);
 
  // components
+
 
 
 
@@ -11677,95 +11684,60 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var App =
-/*#__PURE__*/
-function () {
-  function App() {
-    _classCallCheck(this, App);
+class App {
+  async render($container, meal) {
+    const html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_9___default.a, {}, {
+      header: new _header__WEBPACK_IMPORTED_MODULE_5__["default"]().render(),
+      content: await new _content__WEBPACK_IMPORTED_MODULE_2__["default"]().render(meal)
+    });
+    $container.innerHTML = html;
+    const getMealButton = document.getElementById('getMealBtn');
+    const searchTerm = document.getElementById('searchTerm');
+    const searchButton = document.getElementById('searchButton');
+    const playButton = document.getElementById('playButton');
+    const closeButton = document.getElementById('closeBtn');
+    const toggleButton = document.getElementById('modeToggle');
+    toggleButton.addEventListener('click', function () {
+      _header_toggle__WEBPACK_IMPORTED_MODULE_8__["default"].toggleMode();
+    });
+    playButton.addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_4__["default"].openModal);
+    closeButton.addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_4__["default"].closeModal);
+    getMealButton.addEventListener('click', async function () {
+      _content__WEBPACK_IMPORTED_MODULE_2__["default"].updateContent((await _api__WEBPACK_IMPORTED_MODULE_1__["getRandom"]()));
+    });
+
+    searchTerm.onkeydown = async function (e) {
+      if (e.keyCode === 13) {
+        _content__WEBPACK_IMPORTED_MODULE_2__["default"].updateContent((await _api__WEBPACK_IMPORTED_MODULE_1__["getBySearch"](searchTerm.value)));
+      }
+    };
+
+    searchButton.addEventListener('click', async function () {
+      _content__WEBPACK_IMPORTED_MODULE_2__["default"].updateContent((await _api__WEBPACK_IMPORTED_MODULE_1__["getBySearch"](searchTerm.value)));
+    });
   }
 
-  _createClass(App, [{
-    key: "render",
-    value: function render($container, meal) {
-      var html, getMealButton, searchTerm, searchButton, playButton, closeButton;
-      return regeneratorRuntime.async(function render$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.t0 = mustache__WEBPACK_IMPORTED_MODULE_0___default.a;
-              _context.t1 = _index_html__WEBPACK_IMPORTED_MODULE_8___default.a;
-              _context.t2 = {};
-              _context.t3 = new _header__WEBPACK_IMPORTED_MODULE_5__["default"]().render();
-              _context.next = 6;
-              return regeneratorRuntime.awrap(new _content__WEBPACK_IMPORTED_MODULE_2__["default"]().render(meal));
+  async run($container) {
+    const meal = await _api__WEBPACK_IMPORTED_MODULE_1__["getRandom"]();
+    this.render($container, meal);
+  }
 
-            case 6:
-              _context.t4 = _context.sent;
-              _context.t5 = {
-                header: _context.t3,
-                content: _context.t4
-              };
-              html = _context.t0.render.call(_context.t0, _context.t1, _context.t2, _context.t5);
-              $container.innerHTML = html;
-              getMealButton = document.getElementById('getMealBtn');
-              searchTerm = document.getElementById('searchTerm');
-              searchButton = document.getElementById('searchButton');
-              playButton = document.getElementById('playButton');
-              closeButton = document.getElementById('closeBtn');
-              playButton.addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_4__["default"].openModal);
-              closeButton.addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_4__["default"].closeModal);
-
-            case 17:
-            case "end":
-              return _context.stop();
-          }
-        }
-      });
-    }
-  }, {
-    key: "run",
-    value: function run($container, type, search) {
-      var meal, _meal;
-
-      return regeneratorRuntime.async(function run$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              if (!(type === 'random')) {
-                _context2.next = 7;
-                break;
-              }
-
-              _context2.next = 3;
-              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_1__["getRandom"]());
-
-            case 3:
-              meal = _context2.sent;
-              this.render($container, meal);
-              _context2.next = 11;
-              break;
-
-            case 7:
-              _context2.next = 9;
-              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_1__["getBySearch"](search));
-
-            case 9:
-              _meal = _context2.sent;
-              this.render($container, _meal);
-
-            case 11:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, null, this);
-    }
-  }]);
-
-  return App;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/content/image/icons/playbutton.png":
+/*!************************************************!*\
+  !*** ./src/content/image/icons/playbutton.png ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "836ea7ce937def04d2e9d56b823e62e9.png");
 
 /***/ }),
 
@@ -11822,39 +11794,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/content/image/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
+class Image {
+  render(image) {
+    if (!image) {
+      return '';
+    }
 
-var Image =
-/*#__PURE__*/
-function () {
-  function Image() {
-    _classCallCheck(this, Image);
+    var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      imgSrc: image
+    });
+    return html;
   }
 
-  _createClass(Image, [{
-    key: "render",
-    value: function render(image) {
-      if (!image) {
-        return '';
-      }
-
-      var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        imgSrc: image
-      });
-      return html;
-    }
-  }]);
-
-  return Image;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Image);
 
@@ -11913,15 +11869,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/content/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api */ "./src/api/index.js");
-/* harmony import */ var _image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./image */ "./src/content/image/index.js");
-/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./text */ "./src/content/text/index.js");
-/* harmony import */ var _video__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./video */ "./src/content/video/index.js");
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+/* harmony import */ var _image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./image */ "./src/content/image/index.js");
+/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./text */ "./src/content/text/index.js");
+/* harmony import */ var _video__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./video */ "./src/content/video/index.js");
 
 
 
@@ -11929,63 +11879,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-
-
-var Content =
-/*#__PURE__*/
-function () {
-  function Content() {
-    _classCallCheck(this, Content);
+class Content {
+  async render(meal) {
+    var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
+      image: new _image__WEBPACK_IMPORTED_MODULE_3__["default"]().render(meal.strMealThumb),
+      text: new _text__WEBPACK_IMPORTED_MODULE_4__["default"]().render(meal),
+      video: new _video__WEBPACK_IMPORTED_MODULE_5__["default"]().render(meal.strYoutube)
+    });
+    return html;
   }
 
-  _createClass(Content, [{
-    key: "render",
-    value: function render(meal) {
-      var html;
-      return regeneratorRuntime.async(function render$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
-                image: new _image__WEBPACK_IMPORTED_MODULE_4__["default"]().render(meal.strMealThumb),
-                text: new _text__WEBPACK_IMPORTED_MODULE_5__["default"]().render(meal),
-                video: new _video__WEBPACK_IMPORTED_MODULE_6__["default"]().render(meal.strYoutube)
-              });
-              return _context.abrupt("return", html);
+  static updateContent(meal) {
+    const cont = document.getElementsByClassName('content')[0];
+    var newHtml = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
+      image: new _image__WEBPACK_IMPORTED_MODULE_3__["default"]().render(meal.strMealThumb),
+      text: new _text__WEBPACK_IMPORTED_MODULE_4__["default"]().render(meal),
+      video: new _video__WEBPACK_IMPORTED_MODULE_5__["default"]().render(meal.strYoutube)
+    });
+    cont.innerHTML = newHtml;
+    const playButton = document.getElementById('playButton');
+    const closeButton = document.getElementById('closeBtn');
+    playButton.addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_5__["default"].openModal);
+    closeButton.addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_5__["default"].closeModal);
+  }
 
-            case 2:
-            case "end":
-              return _context.stop();
-          }
-        }
-      });
-    }
-  }, {
-    key: "setContent",
-    value: function setContent() {
-      var meal;
-      return regeneratorRuntime.async(function setContent$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _context2.next = 2;
-              return regeneratorRuntime.awrap(_api__WEBPACK_IMPORTED_MODULE_3__["getRandom"]());
-
-            case 2:
-              meal = _context2.sent;
-              return _context2.abrupt("return", Content.render(meal));
-
-            case 4:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      });
-    }
-  }]);
-
-  return Content;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Content);
 
@@ -12025,7 +11943,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"textContent\">\r\n    <h1 id=\"mealTitle\">{{ mealName }}</h1>\r\n    <p id=\"category\"><span>Category</span>: {{mealCategory}}</p>\r\n    <p id=\"tags\">\r\n      <span>Tags</span>: {{mealTags}}\r\n    </p>\r\n    <p id=\"instructions\">\r\n      {{mealInstructions}}\r\n    </p>\r\n\r\n    <ul class = \"dashed\">\r\n        {{#mealIngredients}}\r\n            <li>{{.}}</li>\r\n        {{/mealIngredients}}\r\n    </ul>\r\n\r\n  </div>";
+module.exports = "<div class=\"textContent\">\r\n    <h1 id=\"mealTitle\">{{ mealName }}</h1>\r\n    <p id=\"category\"><span>Category</span>: {{mealCategory}}</p>\r\n    <p id=\"tags\">\r\n      <span>Tags</span>: {{mealTags}}\r\n    </p>\r\n    <p id=\"instructions\">\r\n      {{mealInstructions}}\r\n    </p>\r\n\r\n    <h2>Ingredients</h2>\r\n    <ul class = \"dashed\">\r\n        {{#mealIngredients}}\r\n            <li>{{.}}</li>\r\n        {{/mealIngredients}}\r\n    </ul>\r\n\r\n  </div>";
 
 /***/ }),
 
@@ -12044,59 +11962,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/content/text/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
+class Text {
+  formatIngredients(meal) {
+    var ingrList = [];
 
-var Text =
-/*#__PURE__*/
-function () {
-  function Text() {
-    _classCallCheck(this, Text);
+    for (let i = 0; i < 21; i++) {
+      const ingrLabel = `strIngredient${i}`;
+      const measureLabel = `strMeasure${i}`;
+
+      if (meal[ingrLabel]) {
+        ingrList.push(`${meal[ingrLabel]} - ${meal[measureLabel]}`);
+      }
+    }
+
+    return ingrList;
   }
 
-  _createClass(Text, [{
-    key: "formatIngredients",
-    value: function formatIngredients(meal) {
-      var ingrList = [];
-
-      for (var i = 0; i < 21; i++) {
-        var ingrLabel = "strIngredient".concat(i);
-        var measureLabel = "strMeasure".concat(i);
-
-        if (meal[ingrLabel]) {
-          ingrList.push("".concat(meal[ingrLabel], " - ").concat(meal[measureLabel]));
-        }
-      }
-
-      return ingrList;
+  render(meal) {
+    if (!meal) {
+      return '';
     }
-  }, {
-    key: "render",
-    value: function render(meal) {
-      if (!meal) {
-        return '';
-      }
 
-      var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        mealName: meal.strMeal,
-        mealCategory: meal.strCategory,
-        mealTags: meal.strTags,
-        mealInstructions: meal.strInstructions,
-        mealIngredients: this.formatIngredients(meal)
-      });
-      return html;
-    }
-  }]);
+    const html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      mealName: meal.strMeal,
+      mealCategory: meal.strCategory,
+      mealTags: meal.strTags,
+      mealInstructions: meal.strInstructions,
+      mealIngredients: this.formatIngredients(meal)
+    });
+    return html;
+  }
 
-  return Text;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Text);
 
@@ -12136,7 +12037,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal\" id=\"modalVideo\" style={{visibAndOpacity}}>\r\n\r\n        <!-- Modal content -->\r\n        <div class=\"modal-content\" id = \"modal-content\">\r\n            \r\n            <iframe\r\n            id=\"videoElement\"\r\n            src={{videoSource}}\r\n            frameborder=\"0\"\r\n            allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\r\n            allowfullscreen\r\n          ></iframe>\r\n          <span class=\"closeBtn\" id=\"closeBtn\">&times;</span>\r\n        </div>\r\n    </div>";
+module.exports = "<div class=\"modal\" id=\"modalVideo\" style=\"visibility:hidden;opacity:0\">\r\n\r\n        <!-- Modal content -->\r\n        <div class=\"modal-content\" id = \"modal-content\">\r\n            \r\n            <iframe\r\n            id=\"videoElement\"\r\n            src={{videoSource}}\r\n            frameborder=\"0\"\r\n            allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\r\n            allowfullscreen\r\n          ></iframe>\r\n          <span class=\"closeBtn\" id=\"closeBtn\">&times;</span>\r\n        </div>\r\n    </div>";
 
 /***/ }),
 
@@ -12155,54 +12056,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/content/video/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
+class Video {
+  render(strYoutube) {
+    if (!strYoutube) {
+      return '';
+    }
 
-var Video =
-/*#__PURE__*/
-function () {
-  function Video() {
-    _classCallCheck(this, Video);
+    const html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      videoSource: strYoutube.replace('watch?v=', 'embed/')
+    });
+    return html;
   }
 
-  _createClass(Video, [{
-    key: "render",
-    value: function render(strYoutube) {
-      if (!strYoutube) {
-        return '';
-      }
+  static openModal() {
+    const modal = document.getElementById('modalVideo');
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+  }
 
-      var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        videoSource: strYoutube.replace('watch?v=', 'embed/')
-      });
-      return html;
-    }
-  }], [{
-    key: "openModal",
-    value: function openModal() {
-      var modal = document.getElementById('modalVideo');
-      modal.style.visibility = 'visible';
-      modal.style.opacity = '1';
-    }
-  }, {
-    key: "closeModal",
-    value: function closeModal() {
-      var modal = document.getElementById('modalVideo');
-      var video = modal.getElementsByTagName('iframe')[0];
-      modal.style.visibility = 'hidden';
-      modal.style.opacity = '0';
-    }
-  }]);
+  static closeModal() {
+    const modal = document.getElementById('modalVideo');
+    const video = modal.getElementsByTagName('iframe')[0];
+    modal.style.visibility = 'hidden';
+    modal.style.opacity = '0';
+  }
 
-  return Video;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Video);
 
@@ -12261,33 +12144,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/header/button/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
-
-var Button =
-/*#__PURE__*/
-function () {
-  function Button() {
-    _classCallCheck(this, Button);
+class Button {
+  render() {
+    var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return html;
   }
 
-  _createClass(Button, [{
-    key: "render",
-    value: function render() {
-      var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
-      return html;
-    }
-  }]);
-
-  return Button;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
 
@@ -12350,11 +12217,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./search */ "./src/header/search/index.js");
 /* harmony import */ var _toggle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./toggle */ "./src/header/toggle/index.js");
 /* harmony import */ var _title__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./title */ "./src/header/title/index.js");
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../app */ "./src/app/index.js");
 
 
 
@@ -12364,28 +12227,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Header =
-/*#__PURE__*/
-function () {
-  function Header() {
-    _classCallCheck(this, Header);
+class Header {
+  render() {
+    var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
+      title: new _title__WEBPACK_IMPORTED_MODULE_6__["default"]().render(),
+      button: new _button__WEBPACK_IMPORTED_MODULE_3__["default"]().render(),
+      search: new _search__WEBPACK_IMPORTED_MODULE_4__["default"]().render(),
+      toggle: new _toggle__WEBPACK_IMPORTED_MODULE_5__["default"]().render()
+    });
+    return html;
   }
 
-  _createClass(Header, [{
-    key: "render",
-    value: function render() {
-      var html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
-        title: new _title__WEBPACK_IMPORTED_MODULE_6__["default"]().render(),
-        button: new _button__WEBPACK_IMPORTED_MODULE_3__["default"]().render(),
-        search: new _search__WEBPACK_IMPORTED_MODULE_4__["default"]().render(),
-        toggle: new _toggle__WEBPACK_IMPORTED_MODULE_5__["default"]().render()
-      });
-      return html;
-    }
-  }]);
+  toggleMode() {
+    document.getElementById("app").classList.add('darkMode');
+  }
 
-  return Header;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -12444,33 +12301,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/header/search/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
-
-var Search =
-/*#__PURE__*/
-function () {
-  function Search() {
-    _classCallCheck(this, Search);
+class Search {
+  render() {
+    var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return html;
   }
 
-  _createClass(Search, [{
-    key: "render",
-    value: function render() {
-      var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
-      return html;
-    }
-  }]);
-
-  return Search;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Search);
 
@@ -12529,33 +12370,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/header/title/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
-
-var Title =
-/*#__PURE__*/
-function () {
-  function Title() {
-    _classCallCheck(this, Title);
+class Title {
+  render() {
+    var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return html;
   }
 
-  _createClass(Title, [{
-    key: "render",
-    value: function render() {
-      var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
-      return html;
-    }
-  }]);
-
-  return Title;
-}();
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Title);
 
@@ -12614,33 +12439,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/header/toggle/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
 
 
-
-var Toggle =
-/*#__PURE__*/
-function () {
-  function Toggle() {
-    _classCallCheck(this, Toggle);
+class Toggle {
+  render() {
+    var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
+    return html;
   }
 
-  _createClass(Toggle, [{
-    key: "render",
-    value: function render() {
-      var html = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
-      return html;
-    }
-  }]);
+  static toggleMode() {
+    const appElem = document.getElementsByClassName('app')[0];
 
-  return Toggle;
-}();
+    if (appElem.classList.contains('darkMode')) {
+      appElem.classList.remove('darkMode');
+    } else {
+      appElem.classList.add('darkMode');
+    }
+  }
+
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (Toggle);
 
@@ -12658,45 +12477,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app */ "./src/app/index.js");
 /* harmony import */ var _babel_polyfill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/polyfill */ "./node_modules/@babel/polyfill/lib/index.js");
 /* harmony import */ var _babel_polyfill__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_polyfill__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content */ "./src/content/index.js");
+
 
 
 var app = new _app__WEBPACK_IMPORTED_MODULE_0__["default"]();
 var $container = document.getElementsByTagName('body')[0];
-
-$container.onload = function _callee2() {
-  var getMealButton;
-  return regeneratorRuntime.async(function _callee2$(_context2) {
-    while (1) {
-      switch (_context2.prev = _context2.next) {
-        case 0:
-          _context2.next = 2;
-          return regeneratorRuntime.awrap(app.run($container, 'random'));
-
-        case 2:
-          getMealButton = document.getElementById('getMealBtn');
-          getMealButton.addEventListener('click', function _callee() {
-            return regeneratorRuntime.async(function _callee$(_context) {
-              while (1) {
-                switch (_context.prev = _context.next) {
-                  case 0:
-                    _context.next = 2;
-                    return regeneratorRuntime.awrap(app.run($container, 'random'));
-
-                  case 2:
-                  case "end":
-                    return _context.stop();
-                }
-              }
-            });
-          });
-
-        case 4:
-        case "end":
-          return _context2.stop();
-      }
-    }
-  });
-};
+app.run($container);
 
 /***/ })
 

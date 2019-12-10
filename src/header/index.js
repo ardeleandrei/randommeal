@@ -5,6 +5,7 @@ import Button from './button'
 import Search from './search'
 import Toggle from './toggle'
 import Title from './title'
+import App from '../app'
 
 class Header {
   render () {
@@ -18,6 +19,11 @@ class Header {
     })
     return html
   }
+
+   toggleMode(){
+     document.getElementById("app").classList.add('darkMode')
+  }
+  
 }
 
 export default Header

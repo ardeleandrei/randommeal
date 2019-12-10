@@ -28,7 +28,7 @@ button {
   }
 
   button:hover{
-    background-color:#45c9f1;
+    background-color:#45c9f1 !important;;
      transition: all 0.2s;
    }
 

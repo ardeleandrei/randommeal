@@ -21,7 +21,7 @@
   background-size: 50%;
   background-position: center center;
     background-repeat: no-repeat;
-    background-image: url('https://i.imgur.com/4cB6VVC.png');
+    background-image: url("./icons/playbutton.png") !important;
     margin: 15px;
   }
   
@@ -48,12 +48,14 @@
 
     .imgBtnWrap {
       height: 88vw;
+      max-width: calc(100% - 30px);
     }
-
+   
    .overlayPlay{
-    opacity: 1;
+   
       height: 88vw;
       width: 88vw;
+      max-width: calc(100% - 30px);
     }
     
 }

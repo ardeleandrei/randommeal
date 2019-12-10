@@ -4,9 +4,64 @@
 }
 
 .app {
-  height: 100vh;
+  height: 100% !important;
   display: flex;
   flex-direction: column;
+  --bg-color: 255,255,255;
+  --h1-color: 0,0,0;
+  --btn-color: 49, 195, 240;
+  --p-color: 80,80,80;
+  --border-color: 211,211,211;
+
+  background-color: rgb(var(--bg-color));
+}
+
+.app h1{
+  color: rgb(var(--h1-color));
+}
+
+.app h2{
+  color: rgb(var(--h1-color))
+}
+
+.app p{
+  color: rgb(var(--p-color));
+}
+
+.app li{
+  color: rgb(var(--p-color));
+}
+
+.app button{
+  background-color: rgb(var(--btn-color));
+}
+
+.app input{
+  background-color: rgb(var(--bg-color));
+}
+
+.app .search{
+  background-color: rgb(var(--bg-color));
+}
+
+.app .container{
+  border-color: rgb(var(--border-color));
+}
+
+.app .modal{
+  background-color: rgba(0,0,0,0.7);
+}
+
+.app .modal-content{
+  background-color: rgb(var(--bg-color));
+}
+
+.darkMode{
+  --bg-color: 41,41,41 !important;
+  --h1-color: 255,255,255 !important;
+  --btn-color: 49,195,240 !important;
+  --border-color: 80,80,80 !important;
+  --p-color: 240,240,240 !important;
 }
 
 .app .header {

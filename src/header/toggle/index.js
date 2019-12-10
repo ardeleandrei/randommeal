@@ -7,6 +7,17 @@ class Toggle {
         var html = template
         return html
     }
+
+   static toggleMode(){
+       const appElem = document.getElementsByClassName('app')[0]
+       if(appElem.classList.contains('darkMode')){
+        appElem.classList.remove('darkMode')
+       }else{
+        appElem.classList.add('darkMode')   
+       }
+       
+   }
+
 }
 
 export default Toggle

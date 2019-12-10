@@ -14,13 +14,15 @@ const getRandom = async () => {
   }
 }
 
-const getBySearch = async (search) => {
+const getBySearch = async (search, index) => {
+  console.log(`${API_URL}/search.php?s=${search}`)
   try {
     const response = await fetch(
       `${API_URL}/search.php?s=${search}`
     )
     const data = await response.json()
-    return data.meals
+    var rndm = Math.floor(Math.random() * Math.floor(data.meals.length))
+    return data.meals[rndm]
 
   } catch (e) {
     console.log('Error is: ' + e)

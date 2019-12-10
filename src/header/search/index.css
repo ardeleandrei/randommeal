@@ -10,8 +10,10 @@
     position: absolute;
     width: 180px;
     display: flex;
-    padding: 10px;
+    padding: none;
     z-index: 1;
+    left: 20px;
+    top: 20px;
   }
   
   .searchTerm {
@@ -69,6 +71,9 @@
         background-color:white;
         bottom: 0;
         left: calc(50% - 100px);
-        top: 700%;
+        top: 740%;
+      }
+      .searchWrap{
+        margin: 0;
       }
   }
